@@ -1,7 +1,7 @@
 var playlist = {Beyonce: "Crazy in Love"};
 
 function updatePlaylist(obj, key, value) {
-  obj.key = value;
+  Object.assign(obj, obj, {key: 'value'});
   return obj;
 }
 
